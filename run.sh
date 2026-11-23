@@ -1,10 +1,10 @@
 #!/bin/bash
-export PATH="$PATH:/usr/home/hadoop/bin"
+export PATH="$PATH:${HADOOP_HOME:-/usr/home/hadoop}/bin"
 
 echo "******************************************************"
 echo "****         Deleting output directory            ****"
 echo "******************************************************"
-rm -R ./output
+rm -rf ./output
 
 echo "******************************************************"
 echo "****           Running Hadoop in local            ****"
